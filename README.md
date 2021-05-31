@@ -79,3 +79,31 @@ belongs_to :user
 | user          | references | foreign_key: true    |
 
 belongs_to :user
+
+## items 
+
+| Column             | Type       | Options           |
+| ------------------ | ---------- | ----------------- |
+| name               | string     | null: false       |
+| price              | integer    | null: false       |
+| description        | text       | null: false       |
+| category_id        | integer    | null: false       |
+| condition_id       | integer    | null: false       |
+| prefecture_id      | integer    | null: false       |
+| shipping_burden_id | integer    | null: false       |
+| shipping_date_id   | integer    | null: false       |
+| user               | references | foreign_key: true |
+
+belongs_to :user
+has_many_attached: images
+has_one :order
+
+## orders
+
+| Column    | Type       | Options           |
+| --------- | ---------- | ----------------- |
+| user      | references | foreign_key: true |
+| item      | references | foreign_key: true |
+
+belongs_to :user
+belongs_to :item
