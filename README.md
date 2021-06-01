@@ -32,8 +32,6 @@ Things you may want to cover:
 | encrypted_password | string   | null: false              |
 | family_name        | string   | null: false              |
 | first_name         | string   | null: false              |
-| family_name_k      | string   | null: false              |
-| first_name_k       | string   | null: false              |
 | birth_day          | date     | null: false              |
 
 has_many :posts
