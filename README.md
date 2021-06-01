@@ -30,9 +30,9 @@ Things you may want to cover:
 | nickname           | string   | null: false              |
 | email              | string   | null: false, unique: true|
 | encrypted_password | string   | null: false              |
-| family_name        | string   | null: false              |
-| first_name         | string   | null: false              |
+| full_name          | string   | null: false              |
 | birth_day          | date     | null: false              |
+| gender             | string   | null: false              |
 
 has_many :posts
 has_many: comments
